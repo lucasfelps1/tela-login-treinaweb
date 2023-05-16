@@ -28,6 +28,13 @@ body {
     padding: 20px 30px;
 }
 
+.form-login h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
 .form-field {
     display: flex;
     flex-direction: column;
@@ -35,12 +42,18 @@ body {
 }
 
 .form-field input {
-    height: 35px;
-    width: 300px;
+    height: 30px;
+    width: 350px;
     background-color: rgb(249, 251, 252);
     border-radius: 4px;
     border: solid 1px #b6b6b6be;
     padding: 3px;
+}
+
+.form-field input:focus {
+    outline-style: solid;
+    outline-color: #cbdbec;
+    outline-width: 2px;
 }
 
 .password-field {
@@ -89,15 +102,16 @@ body {
     width: 100%;
     border-radius: 4px;
     border: solid 1px #b6b6b6be;
-    color: black;
     gap: 5px;
     text-decoration: none;
     padding: 5px;
+    color: black;
 }
 
 .google-login:hover {
     border-color: black;
     transition: .4s;
+    color: black;
 }
 
 
@@ -105,4 +119,16 @@ body {
 
 .logo-tw {
     width: 200px;
+}
+
+/* p */
+
+.form-content p {
+    color: #626976;
+    text-align: center;
+}
+
+.form-content p a {
+    color: #206bc4;
+    text-decoration: none;
 }
